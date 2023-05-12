@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+
+    <!--==CSS File Link==-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--==Box icons Link==-->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--==Icon file link==-->
+    <link rel="shortcut icon" href="img/icon.ico">
+
+</head>
+<body>
+    <header>
+
+        <section class="container-header">
+
+            <div class="logo">
+                <img src="img/logo.svg" alt="Logo">
+            </div>
+
+            <div class="title">
+                <h1>Encriptador</h1>
+            </div>
+
+            <div class="subtitle">
+                <h2>Challenge One Next</h2>
+            </div>
+
+            <div class="header-icons">
+                <div class="icon-github">
+                    <a href="https://github.com/LoLgic"><i class='bx bxl-github' ></i></a>
+                </div>
+                <div class="bx bx-moon" id="darkmode"></div>
+            </div>
+
+        </section>
+    </header>
+
+    <main>
+        <section class="container-principal">
+                <div class="inputEncriptar">
+                    <textarea name="texto" id="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aqui..."></textarea>
+
+                    <div class="errorMensaje">
+
+                    </div>
+                    <div class="terminos">
+                        <img src="img/Vector.svg" alt="">
+                        <p>Solo letras minúsculas y sin acéntos.</p>
+                    </div>
+
+                    <button id="encriptar">Encriptar</button>
+                    <button id="desencriptar">Desencriptar</button>
+                </div>
+                
+                
+                <div class="inputResultado">
+                    <textarea name="texto" id="resultado" cols="30" rows="10" placeholder="Resultado..."></textarea>
+
+                    <button id="copiar">Copiar</button>
+                </div>
+
+                <div class="imagen-people">
+                    <img src="img/diamod.svg" alt="" class="diamod" id="diamod">
+                    <img src="img/people.svg" alt="" class="people" id="people">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="copyright">
+            <p>Create by Mario Petro</p>
+        </section>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/1c0fd3c86d.js" crossorigin="anonymous">
+    </script>
+    <script src="js/code.js"></script>
+</body>
+</html>

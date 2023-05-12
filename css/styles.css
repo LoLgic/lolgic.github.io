@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color:#f24f04;
+    --text-color:#252429;
+    --bg-color:#fffefb;
+    --other-color:#95949a;
+    --bb-color:#fff2de;
+    --blue-color:#514ce1;
+    --bluedark--color:#4641ca;
+    --color-box-shadow:rgba(50, 50, 93, 0.25);
+    --other-box-shadow:rgba(0, 0, 0, 0.3);
+
+    --big-font:2.9rem;
+    --medium-font:.9rem;
+    --p-font:.7rem;
+}
+
+body{
+    font-family: 'poppins';
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+body.dark{
+    --text-color: #fff;
+    --bg-color:#1f1f1f;
+    --bb-color: #0e0e0e;
+    --color-box-shadow:rgba(0, 0, 0, 0.100);
+    --other-box-shadow:rgba(0, 0, 0, 0.500);
+}
+header{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: var(--bg-color);
+}
+.logo{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 2%;
+    top: 20%;
+}
+.logo img{
+    position: relative;
+    left: 25%;
+    top: 10%;
+}
+.title{
+    position: absolute;
+    color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    top: 0%;
+}
+.title h1{
+    position: relative;
+    text-align: center;
+    font-size: var(--big-font);
+}
+.subtitle{
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 65%;
+}
+.subtitle h2{
+    position: relative;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: var(--medium-font); 
+}
+.header-icons{
+    position: relative;
+    display: flex;
+    left: 85%;
+    top: 30px;
+    width: 92px;
+    height: 40px;
+    align-items: center;
+}
+.header-icons i{
+    position: relative;
+    vertical-align: middle;
+    font-size: 2rem;
+    top: 3px;
+    color: var(--text-color);
+    transition: all ease .50s;
+}
+.header-icons i:hover{
+    transform: scale(1.1) translate(-5px);
+    color: var(--main-color);
+}
+
+#darkmode{
+    position: relative;
+    left: 30%;
+    top: 1px;
+    font-size: 1.8rem;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    height: 600px;
+}
+.container-principal{
+    position: relative;
+    background: var(--bg-color);
+    width: 96%;
+    height: 93%;
+    left: 2%;
+    top: 2%;
+    box-shadow: var(--color-box-shadow) 0px 6px 12px
+    -2px, var(--other-box-shadow) 0px 3px 7px -3px;
+    border-radius: 10px;
+}
+.inputEncriptar{
+    width: 45%;
+    height: 50%;
+    padding-left: 5%;
+    display: block;
+}
+textarea{
+    margin:5px 5%;
+    padding: 10px;
+    width: 90%;
+    height: 70%;
+    outline: none;
+    border: 2px solid var(--other-color);
+    background: var(--bg-color);
+    resize: none;
+    border-radius: 0.5rem;
+    text-transform: lowercase;
+    color: var(--text-color);
+    font-size: var(--medium-font);
+}
+.errorMensaje{
+    position: relative;
+    width: 100%;
+    height: 15px;
+    top: -5px;
+}
+.errorMensaje p{
+    color: red;
+    position: relative;
+    left: 5%;
+    font-size: var(--p-font);
+}
+.terminos{
+    position: relative;
+    top: -4px;
+    display: flex;
+    width: 100%;
+    height: 22px;
+}
+.terminos img{
+    opacity: 50%;
+    width: var(--medium-font);
+    margin-right:5px;
+    margin-left: 5%;
+}
+.terminos p{
+    color: var(--other-color);
+    font-size: var(--medium-font);
+}
+button{
+    position: relative;
+    width: 22%;
+    height: 30px;
+    left: 5%;
+    top: 0px;
+    margin-right: 25px;
+    outline: none;
+    border: none;
+    background: var(--blue-color);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: var(--medium-font);
+    text-align: center;
+    color: var(--bg-color);
+}
+.inputResultado{
+    width: 45%;
+    height: 50%;
+    padding-left: 5%;
+}
+.inputResultado button{
+    top: 10%;
+  
+}
+button:hover{
+    transform: translate(-1px);
+    background: var(--bluedark--color);
+    color: var(--bg-color);
+    font-weight: bold;
+}
+button:active{
+    background: var(--blue-color);
+    border-radius: 10px;
+}
+.imagen-people{
+    position: absolute;
+    top: 0%;
+    left: 55%;
+    width: 350px;
+    height: 80%;
+}
+.imagen-people img{
+    position: absolute;
+    top: 20%;
+    left: 7px;
+}
+.diamod{
+    position: absolute;
+    margin: 15%;
+    animation-name: animacion;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes animacion{
+    0%{top: 20%;}
+    25%{top: 22%;}
+    50%{top: 24%;}
+    75%{top: 22%;}
+    100%{top: 20%;}
+}   
+
+.people{
+    position: absolute;
+}
+footer{
+    position: relative;
+    top: 700px;
+    width: 100%;
+    height: 49px;  
+    background: var(--bg-color);
+}
+footer p{
+    position: relative;
+    top: 0px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: var(--medium-font);
+    color: var(--other-color);
+}
+@media(max-width: 1180px){
+    button{
+        width: 25%;
+    }
+}
+@media(max-width: 1015px){
+    button{
+        width: 30%;
+    }
+}
+@media(max-width: 840px){
+    .inputEncriptar{
+        width: 50%;
+        padding-left: 5%;
+    }
+    .inputResultado{
+        width: 50%;
+        padding-left: 5%;
+    }
+    button{
+        width: 35%;
+    }
+    .imagen-people{
+        width: 315px;
+    }
+    .diamod{
+        width: 70px;
+        margin: 10%;
+    }
+    .people{
+        width: 300px;
+    }
+}
+@media(max-width: 735px){
+    :root{
+        --big-font:2.4rem;
+        --medium-font:.7rem;
+        --p-font:.5rem;
+    }
+    .header-icons{
+        left: 80%;
+        top: 30px;
+    }
+    button{
+        width: 40%;
+        margin-right: 10px;
+    }
+    .imagen-people{
+        display: none;
+    }
+    .inputEncriptar{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        padding-left: 0%;
+    }
+    .inputResultado{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        padding-left: 0%;
+    }
+}
+@media(max-width: 450px){
+    :root{
+        --big-font:2rem;
+    }
+    .logo img{
+        width: 50%;
+    }
+    .subtitle h2{
+        letter-spacing: 2px;
+        font-size: var(--medium-font); 
+    }
+    .header-icons{
+        left: 75%;
+        top: 30px;
+    }
+}
+@media(max-width: 375px){
+    .logo img{
+        width: 45%;
+    }
+    #darkmode{
+        left: 35px;
+        top: 3px;
+        font-size: 1.6rem;
+    }
+    .header-icons i{
+        font-size: 1.8rem;
+        left: 20px;
+    }
+
+}
