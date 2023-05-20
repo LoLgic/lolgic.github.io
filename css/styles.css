@@ -103,6 +103,7 @@ header{
     left: 30%;
     top: 1px;
     font-size: 1.8rem;
+    cursor: pointer;
 }
 
 main{
